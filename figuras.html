@@ -30,36 +30,53 @@
             </button>
         </form>
 
-        <h2>Calcula el área y el perímetro de un triángulo</h2>
+        <h2>Calcula el perímetro de un triángulo</h2>
         <form action="">
             <label for="InputTriangulo">
                 Escribe cuánto mide cada lado de tu triángulo:
             </label>
 
-            <input id="InputTriangulo1" type="number">
+            <input id="InputTriangulo1" type="number" placeholder="Lado 1">
 
-            <input id="InputTriangulo2" type="number">
+            <input id="InputTriangulo2" type="number" placeholder="Lado 2">
 
-            <input id="InputBaseTriangulo" type="number">
+            <input id="InputBaseTriangulo" type="number" placeholder="Base">
 
             <button type="button" onclick="calcularPerimetroTriangulo()">
                 Calcular el perímetro
             </button>
-
-            <br>
-            <br>
-
+        </form>
+           
+        <h2>Calcula el área de un triángulo</h2>
+        <form action="">
             <label for="InputTriangulo2">
                 Escribe cuánto mide la base y la altura de tu triángulo:
             </label>
 
-            <input id="BaseTriangulo" type="number">
+            <input id="BaseTriangulo" type="number" placeholder="Base">
 
-            <input id="AlturaTriangulo" type="number">
+            <input id="AlturaTriangulo" type="number" placeholder="Altura">
 
 
             <button type="button" onclick="calcularAreaTriangulo()">
                 Calcular el área
+            </button>
+        </form>
+
+        <h2>Calcula la altura de un triángulo isósceles</h2>
+        <form action="">
+            <label for="InputLado1">
+                Escribe cuánto miden los lados y la base de tu triángulo:
+            </label>
+
+            <input id="InputLado1" type="number" placeholder="Lado 1">
+
+            <input id="InputLado2" type="number" placeholder="Lado 2">
+
+            <input id="InputBase" type="number" placeholder="Base">
+
+            <button type="button" onclick="calcularAlturaTriangulo()">
+                Calcular la altura
             </button>
         </form>
 

@@ -27,6 +27,17 @@ function areaTriangulo (base, altura) {
     return (base * altura) / 2;
 }
 
+// Altura triángulo isósceles
+function alturaTriangulo(lado1, lado2, base) 
+{
+    if (lado1 == lado2) {
+        return Math.sqrt(((lado1 * lado2) - ((base * base) / 4)));
+    } else {
+        alert("No es un triángulo isósceles, sus lados son distintos");
+    }
+    
+}
+
 console.groupEnd();
 
 
@@ -98,6 +109,20 @@ function calcularAreaTriangulo() {
 
     const area = areaTriangulo(value1, value2);
     alert(area);
+}
+
+function calcularAlturaTriangulo() {
+    const input1 = document.getElementById("InputLado1");
+    const value1 = Number(input1.value);
+
+    const input2 = document.getElementById("InputLado2");
+    const value2 = Number(input2.value);
+
+    const input3 = document.getElementById("InputBase");
+    const value3 = Number(input3.value);
+
+    const altura = alturaTriangulo(value1, value2, value3);
+    alert(altura);
 }
 
 // Círculo
