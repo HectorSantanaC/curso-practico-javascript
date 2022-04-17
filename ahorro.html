@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro e inversión</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ahorro e inversión</h1>
+    </header>
+
+    <section>
+        <form action="/" class="form">
+            <h2>Calculadora de ahorro por porcentaje</h2>
+            
+            <label for="InputIngresos" class="label">Ingreso total</label>
+            <input id="InputIngresos" type="number" placeholder="€">
+    
+            <label for="InputAhorro" class="label">Porcentaje de ahorro</label>
+            <input id="InputAhorro" type="number" placeholder="%">
+    
+            <button type="button" class="primary-button" onclick="ButtonCalcularAhorroMensual()">Calcular</button>
+
+            <p id="ResultA"></p>
+
+            <h2>Calculadora de interés compuesto</h2>
+            
+            <label for="InputAhorroMensual" class="label">Ahorro mensual</label>
+            <input id="InputAhorroMensual" type="number" placeholder="€">
+    
+            <label for="InputTiempo" class="label">Plazo</label>
+            <input id="InputTiempo" type="number" placeholder="Años">
+
+            <label for="InputInteres" class="label">Tasa de Interés Anual</label>
+            <input id="InputInteres" type="number" placeholder="%">
+    
+            <button type="button" class="secondary-button" onclick="ButtonCalcularInteresCompuesto()">Calcular</button>
+
+            <p id="ResultB"></p>
+
+        </form>
+    </section>
+    
+    <script src="./ahorro.js"></script>
+</body>
+</html>
