@@ -23,7 +23,6 @@ section {
     margin-top: -3px;
     border: solid;
     text-align: center;
-    font-size: var(--md);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
@@ -52,7 +51,6 @@ input {
 }
 
 .primary-button {
-    margin-top: 14px;
     background-color: var(--white);
     border-radius: 8px;
     border: 1px solid var(--moderate-blue);
@@ -65,7 +63,6 @@ input {
 }
 
 .secondary-button {
-    margin-top: 14px;
     background-color: var(--white);
     border-radius: 8px;
     border: 1px solid var(--moderate-blue);

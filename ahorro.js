@@ -2,7 +2,7 @@
 
 function calcularAhorroMensual(ingresos, porcentaje) {
     const ahorro = (ingresos * porcentaje) / 100;
-    return ahorro;
+    return ahorro.toFixed(2);
 }
 
 function ButtonCalcularAhorroMensual() {
