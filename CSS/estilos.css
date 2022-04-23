@@ -42,7 +42,7 @@ label {
 }
 
 input {
-    width: 150px;
+    width: 100px;
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;

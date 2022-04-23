@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,36 +14,50 @@
     </header>
     <main>
         <section>
-            <form action="/" class="form">
+            <form action="/" class="form1">
                 <h2>Calculadora de ahorro por porcentaje</h2>
                 
-                <label for="InputIngresos" class="label">Ingreso total</label>
-                <input id="InputIngresos" type="number" placeholder="€">
-        
-                <label for="InputAhorro" class="label">Porcentaje de ahorro</label>
-                <input id="InputAhorro" type="number" placeholder="%">
-        
+                <label for="InputIngresos" class="label">
+                    <span>Ingreso mensual</span>
+                    <input id="InputIngresos" type="number" placeholder="€">
+                </label>
+                
+                <label for="InputAhorro" class="label">
+                    <span>Porcentaje de ahorro</span>
+                    <input id="InputAhorro" type="number" placeholder="%">
+                </label>
+                
                 <button type="button" class="primary-button" onclick="ButtonCalcularAhorroMensual()">Calcular</button>
 
                 <p id="ResultA"></p>
+            </form>
+        </section>
 
+        <section>
+            <form action="/" class="form2">
                 <h2>Calculadora de interés compuesto</h2>
                 
-                <label for="InputAhorroMensual" class="label">Ahorro mensual</label>
-                <input id="InputAhorroMensual" type="number" placeholder="€">
-        
-                <label for="InputTiempo" class="label">Plazo</label>
-                <input id="InputTiempo" type="number" placeholder="Años">
+                <label for="InputAhorroMensual" class="label">
+                    <span>Ahorro mensual</span>
+                    <input id="InputAhorroMensual" type="number" placeholder="€">
+                </label>
+                
+                <label for="InputTiempo" class="label">
+                    <span>Plazo</span>
+                    <input id="InputTiempo" type="number" placeholder="Años">
+                </label>
 
-                <label for="InputInteres" class="label">Tasa de Interés Anual</label>
-                <input id="InputInteres" type="number" placeholder="%">
+                <label for="InputInteres" class="label">
+                    <span>Tasa de Interés Anual</span>
+                    <input id="InputInteres" type="number" placeholder="%">
+                </label>
         
                 <button type="button" class="secondary-button" onclick="ButtonCalcularInteresCompuesto()">Calcular</button>
 
                 <p id="ResultB"></p>
 
             </form>
-        </section>
+       </section>
     </main>
 
     <script src="./ahorro.js"></script>

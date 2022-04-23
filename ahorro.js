@@ -48,6 +48,6 @@ function ButtonCalcularInteresCompuesto() {
     const resultadoFinal = calcularInteresCompuesto(aportacionAnual, tiempoValue, interesValue);
 
     const ResultB = document.getElementById("ResultB");
-    ResultB.innerText = "El capital final invirtiendo " + ahorroMensualValue + "€ al mes con un interés del " + interesValue + "% durante " + 
+    ResultB.innerText = "El capital final invirtiendo " + ahorroMensualValue + "€ al mes con un interés del " + interesValue + "% anual durante " + 
     tiempoValue + " años sería " + resultadoFinal + "€";
 }
