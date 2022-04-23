@@ -31,7 +31,7 @@ function medianaSalarios(lista) {
     }
 }
   
-  // Mediana General - Recoge la lista de salarios del archivo salarios.js
+// Mediana General - Recoge la lista de salarios del archivo salarios.js
 const salariosSp = spain.map(
     function (personita) {
         return personita.salary;

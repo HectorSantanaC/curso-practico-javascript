@@ -19,7 +19,7 @@ header {
     border-color: var(--black);
 }
 
-section {
+main {
     margin-top: -3px;
     border: solid;
     text-align: center;
